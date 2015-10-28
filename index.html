@@ -34,7 +34,7 @@
 
 </head>
 
-<body id="page-top">
+<body id="page-top" ng-app="myApp">
 
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -147,7 +147,7 @@
         </div>
     </section>
 
-    <section class="no-padding" id="portfolio">
+    <section class="no-padding" id="portfolio" ng-controller="MainController">
         <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12 text-center">
@@ -156,23 +156,23 @@
             </div>
         </div>
             <div class="row no-gutter">
-                <div class="col-lg-4 col-sm-6">
-                    <a data-toggle="modal" data-target="#project1" href="#" class="portfolio-box">
-                        <img src="https://unsplash.it/650/350?image=535" class="img-responsive" alt="">
+                <div class="col-lg-4 col-sm-6" ng-repeat="project in projects">
+                    <a data-toggle="modal" data-target="#{{project.code}}" href="#" class="portfolio-box">
+                        <img src="https://unsplash.it/650/350?image={{project.img}}" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
                                 <div class="project-name">
-                                    Project Name
+                                    {{project.name}}
+                                </div>
+                                <div class="project-category text-faded">
+                                    {{project.category}}
                                 </div>
                             </div>
                         </div>
                     </a>
 
                     <!-- Modal -->
-                    <div id="project1" class="modal fade" role="dialog">
+                    <div id="{{project.code}}" class="modal fade" role="dialog">
                       <div class="modal-dialog modal-lg">
 
                         <!-- Modal content-->
@@ -193,181 +193,7 @@
                     </div>
 
                 </div> <!-- col-lg-4 col-sm-6 -->
-                <div class="col-lg-4 col-sm-6">
-                    <a data-toggle="modal" data-target="#project2" href="#" class="portfolio-box">
-                        <img src="https://unsplash.it/650/350?image=534" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- Modal -->
-                    <div id="project2" class="modal fade" role="dialog">
-                      <div class="modal-dialog modal-lg">
-
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Modal Header</h4>
-                          </div>
-                          <div class="modal-body">
-                            <p>Some text in the modal.</p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a data-toggle="modal" data-target="#project3" href="#" class="portfolio-box">
-                        <img src="https://unsplash.it/650/350?image=532" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- Modal -->
-                    <div id="project3" class="modal fade" role="dialog">
-                      <div class="modal-dialog modal-lg">
-
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Modal Header</h4>
-                          </div>
-                          <div class="modal-body">
-                            <p>Some text in the modal.</p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a data-toggle="modal" data-target="#project4" href="#" class="portfolio-box">
-                        <img src="https://unsplash.it/650/350?image=533" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- Modal -->
-                    <div id="project4" class="modal fade" role="dialog">
-                      <div class="modal-dialog modal-lg">
-
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Modal Header</h4>
-                          </div>
-                          <div class="modal-body">
-                            <p>Some text in the modal.</p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a data-toggle="modal" data-target="#project5" href="#" class="portfolio-box">
-                        <img src="https://unsplash.it/650/350?image=531" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- Modal -->
-                    <div id="project5" class="modal fade" role="dialog">
-                      <div class="modal-dialog modal-lg">
-
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Modal Header</h4>
-                          </div>
-                          <div class="modal-body">
-                            <p>Some text in the modal.</p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a data-toggle="modal" data-target="#project6" href="#" class="portfolio-box">
-                        <img src="https://unsplash.it/650/350?image=625" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- Modal -->
-                    <div id="project6" class="modal fade" role="dialog">
-                      <div class="modal-dialog modal-lg">
-
-                        <!-- Modal content-->
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h4 class="modal-title">Modal Header</h4>
-                          </div>
-                          <div class="modal-body">
-                            <p>Some text in the modal.</p>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                          </div>
-                        </div>
-
-                      </div>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </section>
@@ -376,7 +202,7 @@
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>So What Do you Think? Cool Right?</h2>
-                <!-- <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a> -->
+                <a href="#" class="btn btn-default btn-xl wow tada">Click Here To See More</a>
             </div>
         </div>
     </aside>
@@ -412,6 +238,8 @@
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers/MainController.js"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
