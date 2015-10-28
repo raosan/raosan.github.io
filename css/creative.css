@@ -123,7 +123,7 @@ aside {
 
 @media(min-width:768px) {
     .navbar-default {
-        border-color: rgba(255,255,255,.3);
+        /*border-color: rgba(255,255,255,.3);*/
         background-color: transparent;
     }
 
@@ -196,7 +196,7 @@ header .header-content {
 header .header-content .header-content-inner h1 {
     margin-top: 0;
     margin-bottom: 0;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-weight: 700;
 }
 
@@ -209,6 +209,13 @@ header .header-content .header-content-inner p {
     font-size: 16px;
     font-weight: 300;
     color: rgba(255,255,255,.7);
+}
+header .header-content .header-content-inner img{
+    border: 7px solid #f1f1f1;
+    border-radius: 100%;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
 }
 
 @media(min-width:768px) {
