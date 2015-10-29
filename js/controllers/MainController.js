@@ -1,14 +1,7 @@
 app.controller('MainController',['$scope', function($scope){
  
   $scope.portfolios = 
-    [ 
-      // { 
-      // 	code: '1',
-      //   name: 'SIREX', 
-      //   category: 'Database Management and Scheduling System', 
-      //   img: '531' 
-      // }, 
-      
+    [     
       { 
       	code: 'ciel',
         name: 'CIEL SBM ITB', 
@@ -30,12 +23,6 @@ app.controller('MainController',['$scope', function($scope){
         desc: 'ICDC Indonesia is a website for community development. By using wordpress technology, i made it in short time',
         link: 'http://icdcindonesia.or.id/'  
       },
-      // { 
-      // 	code: '5',
-      //   name: 'BWS Papua Barat', 
-      //   category: 'Web for Papua Ministry of Public Works', 
-      //   img: '534' 
-      // }, 
       { 
       	code: 'kuisioner',
         name: 'Online Kuisioner', 
@@ -43,12 +30,13 @@ app.controller('MainController',['$scope', function($scope){
         desc: 'An Online mitigation risk questionnaire website. I do the front end for this website and a little bit back end. This site is build by Code Igniter',
         link:  'classified'
       }, 
-      // { 
-      // 	code: '7',
-      //   name: 'Cryotech', 
-      //   category: 'Crytotech Company Profile Webite', 
-      //   img: '534' 
-      // },  
+      { 
+      	code: 'sipencatar',
+        name: 'SIPENCATAR', 
+        category: 'Online registration and integrated Computer Based Test for selection of Calon Taruna by BPSDM Kemenhub',
+        desc: 'SIPENCATAR is an online registration and integrated Computer Assisted Test for selection of Calon Taruna by BPSDM Kemenhub. My role in this project is a Project Manager / Scrum Master and System Analyst',
+        link: 'classified'
+      },
       { 
       	code: 'socentra',
         name: 'Socentra Institute', 
@@ -57,13 +45,14 @@ app.controller('MainController',['$scope', function($scope){
         link:  'http://socentrainstitute.com/'
       }, 
 
-      { 
-      	code: 'sipencatar',
-        name: 'SIPENCATAR', 
-        category: 'Online registration and integrated Computer Based Test for selection of Calon Taruna by BPSDM Kemenhub',
-        desc: 'SIPENCATAR is an online registration and integrated Computer Assisted Test for selection of Calon Taruna by BPSDM Kemenhub. My role in this project is a Project Manager / Scrum Master and System Analyst',
-        link:  'classified'
-      }, 
+      
+      // { 
+      // 	code: 'bws',
+      //   name: 'BWS Papua Barat', 
+      //   category: 'Web for Papua Ministry of Public Works', 
+      //   desc: 'Web for Papua Ministry of Public Works',
+      //   link: 'classified'
+      // }, 
       // { 
       // 	code: '9',
       //   name: 'SKHA Consulting Company Profile', 
@@ -75,14 +64,28 @@ app.controller('MainController',['$scope', function($scope){
       //   name: 'spiro+', 
       //   category: 'Model of integrated hydroponics farm with automatic control system', 
       //   img: '534' 
-      // },  
-      // { 
-      // 	code: '11',
-      //   name: 'Inagro', 
-      //   category: 'One stop marketplace for agroindustrial products', 
-      //   img: '534' 
-      // },  
-       
+      // }, 
+      { 
+      	code: 'sirex',
+        name: 'SIREX', 
+        category: 'Database Management and Scheduling System', 
+        desc: 'Database Management and Scheduling System for Rexa Edu. This is my first work as Front End Web Developer',
+        link: ''
+      }, 
+      { 
+      	code: 'inagro',
+        name: 'Inagro', 
+        category: 'One stop marketplace for agroindustrial products', 
+        desc: 'One stop marketplace for agroindustrial products. We get the first place in Agroindustry IT Challenge (AITC) National Championship held by IPB by making this product prototype',
+        link: '' 
+      },  
+      { 
+      	code: 'cryotech',
+        name: 'Cryotech', 
+        category: 'Crytotech Company Profile Webite', 
+        desc: 'Crytotech Company Profile Webite',
+        link: '' 
+      }, 
     
     ]
 	
