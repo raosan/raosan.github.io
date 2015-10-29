@@ -13,7 +13,7 @@ app.controller('MainController',['$scope', function($scope){
       	code: 'ciel',
         name: 'CIEL SBM ITB', 
         category: 'CMS of the company profile website',
-        desc: 'I remake an oldschool website with wordpress technology',
+        desc: 'CIEL SBM ITB is CMS of the company profile website. I remake the oldschool website with wordpress technology',
         link: 'http://cielsbm.org/'
       }, 
       { 
@@ -27,7 +27,7 @@ app.controller('MainController',['$scope', function($scope){
       	code: 'icdc',
         name: 'ICDC Indonesia', 
         category: 'A website for community development',
-        desc: 'By using wordpress technology, i made it in short time',
+        desc: 'ICDC Indonesia is a website for community development. By using wordpress technology, i made it in short time',
         link: 'http://icdcindonesia.or.id/'  
       },
       // { 
@@ -40,7 +40,7 @@ app.controller('MainController',['$scope', function($scope){
       	code: 'kuisioner',
         name: 'Online Kuisioner', 
         category: 'Online mitigation risk questionnaire',
-        desc: 'I do the front end for this website and a little bit back end. This site is build by Code Igniter',
+        desc: 'An Online mitigation risk questionnaire website. I do the front end for this website and a little bit back end. This site is build by Code Igniter',
         link:  'classified'
       }, 
       // { 
@@ -53,7 +53,7 @@ app.controller('MainController',['$scope', function($scope){
       	code: 'socentra',
         name: 'Socentra Institute', 
         category: 'A Website for Information about Social Entrepreneur',
-        desc: 'Build it by using wordpress for the CMS',
+        desc: 'Socentra Institute is a Website for Information about Social Entrepreneur. Build it by using wordpress for the CMS',
         link:  'http://socentrainstitute.com/'
       }, 
 
@@ -61,7 +61,7 @@ app.controller('MainController',['$scope', function($scope){
       	code: 'sipencatar',
         name: 'SIPENCATAR', 
         category: 'Online registration and integrated Computer Based Test for selection of Calon Taruna by BPSDM Kemenhub',
-        desc: 'My role in this project is a Project Manager / Scrum Master and System Analyst',
+        desc: 'SIPENCATAR is an online registration and integrated Computer Assisted Test for selection of Calon Taruna by BPSDM Kemenhub. My role in this project is a Project Manager / Scrum Master and System Analyst',
         link:  'classified'
       }, 
       // { 
