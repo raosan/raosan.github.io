@@ -184,7 +184,9 @@
                             <h4 class="modal-title">{{portfolio.name}}</h4>
                           </div>
                           <div class="modal-body">
-                            <p>{{portfolio.category}}</p>
+                            <img class="img-responsive" src="img/portfolios/{{portfolio.code}}.PNG"><br>
+                            <p>{{portfolio.desc}}</p>
+                            URL: <a href="{{portfolio.link}}">{{portfolio.link}}</a>
                           </div>
                           <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

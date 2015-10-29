@@ -8,20 +8,27 @@ app.controller('MainController',['$scope', function($scope){
       //   category: 'Database Management and Scheduling System', 
       //   img: '531' 
       // }, 
+      
       { 
       	code: 'ciel',
         name: 'CIEL SBM ITB', 
-        category: 'CMS of the company profile website', 
+        category: 'CMS of the company profile website',
+        desc: 'I remake an oldschool website with wordpress technology',
+        link: 'http://cielsbm.org/'
       }, 
       { 
       	code: 'tresco',
         name: 'Tresco', 
-        category: 'A CMS for real estate information with custom design wesbitse', 
+        category: 'A CMS for real estate information with custom design wesbitse',
+        desc: 'A CMS for real estate information with custom design wesbitse',
+        link:  'http://tresco.id/'
       }, 
       { 
       	code: 'icdc',
         name: 'ICDC Indonesia', 
-        category: 'A website for community development', 
+        category: 'A website for community development',
+        desc: 'By using wordpress technology, i made it in short time',
+        link: 'http://icdcindonesia.or.id/'  
       },
       // { 
       // 	code: '5',
@@ -32,7 +39,9 @@ app.controller('MainController',['$scope', function($scope){
       { 
       	code: 'kuisioner',
         name: 'Online Kuisioner', 
-        category: 'Online mitigation risk questionnaire', 
+        category: 'Online mitigation risk questionnaire',
+        desc: 'I do the front end for this website and a little bit back end. This site is build by Code Igniter',
+        link:  'classified'
       }, 
       // { 
       // 	code: '7',
@@ -43,7 +52,17 @@ app.controller('MainController',['$scope', function($scope){
       { 
       	code: 'socentra',
         name: 'Socentra Institute', 
-        category: 'A Website for Information about Social Entrepreneur', 
+        category: 'A Website for Information about Social Entrepreneur',
+        desc: 'Build it by using wordpress for the CMS',
+        link:  'http://socentrainstitute.com/'
+      }, 
+
+      { 
+      	code: 'sipencatar',
+        name: 'SIPENCATAR', 
+        category: 'Online registration and integrated Computer Based Test for selection of Calon Taruna by BPSDM Kemenhub',
+        desc: 'My role in this project is a Project Manager / Scrum Master and System Analyst',
+        link:  'classified'
       }, 
       // { 
       // 	code: '9',
@@ -63,11 +82,7 @@ app.controller('MainController',['$scope', function($scope){
       //   category: 'One stop marketplace for agroindustrial products', 
       //   img: '534' 
       // },  
-      { 
-      	code: 'sipencatar',
-        name: 'SIPENCATAR', 
-        category: 'Online registration and integrated Computer Based Test for selection of Calon Taruna by BPSDM Kemenhub', 
-      },  
+       
     
     ]
 	
